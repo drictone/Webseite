@@ -70,6 +70,11 @@
     text-decoration:none;font-weight:600;font-size:.88rem;transition:background .2s;
   }
   .navcta:hover{background:var(--orange-dark);}
+  .navactions{display:flex;align-items:center;gap:14px;margin-left:24px;}
+  .navig{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:var(--ink);color:var(--white);text-decoration:none;transition:background .2s,transform .2s;}
+  .navig:hover{background:var(--orange);transform:scale(1.06);}
+  .btn-ig{display:inline-flex;align-items:center;gap:10px;}
+  .navlinks a,.navcta{white-space:nowrap;}
   .navtoggle{display:none;background:none;border:none;font-size:1.6rem;cursor:pointer;color:var(--ink);line-height:1;padding:4px 6px;}
   .mobile-menu{
     display:none;flex-direction:column;background:var(--cream);
@@ -213,6 +218,8 @@
     .party-badge{display:none;}
     .navtoggle{display:block;}
     .navcta{display:none;}
+    .navactions{margin-left:10px;gap:6px;}
+    .navig{width:36px;height:36px;}
     .hero .wrap{grid-template-columns:1fr;}
     .portrait{max-width:280px;margin:0 auto;}
     .about-grid{grid-template-columns:1fr;}
@@ -254,14 +261,18 @@
       <a href="ueber-mich.html">Über mich</a>
       <a href="positionen.html" style="opacity:1;font-weight:700;">Positionen</a>
     </div>
-    <a href="index.html#kontakt" class="navcta">Jetzt unterstützen</a>
-    <button class="navtoggle" id="navtoggle" aria-label="Menü öffnen" aria-expanded="false">&#9776;</button>
+    <div class="navactions">
+      <a href="https://www.instagram.com/driton_mitte/" class="navig" target="_blank" rel="noopener" aria-label="Instagram: @driton_mitte" title="Instagram: @driton_mitte"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg></a>
+      <a href="index.html#kontakt" class="navcta">Jetzt unterstützen</a>
+      <button class="navtoggle" id="navtoggle" aria-label="Menü öffnen" aria-expanded="false">&#9776;</button>
+    </div>
   </div>
 </nav>
 <div class="mobile-menu" id="mobile-menu">
   <a href="index.html">Home</a>
   <a href="ueber-mich.html">Über mich</a>
   <a href="positionen.html">Positionen</a>
+  <a href="https://www.instagram.com/driton_mitte/" target="_blank" rel="noopener">Instagram @driton_mitte</a>
   <a href="index.html#kontakt" class="mobile-menu-cta">Jetzt unterstützen</a>
 </div>
 <script>
